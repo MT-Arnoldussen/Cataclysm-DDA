@@ -131,29 +131,5 @@
          "skills": ["smg", "shotgun", "rifle"]
     },
     "flags": ["WATER_FRIENDLY", "STURDY", "WAIST"]
-  },
-  {
-    "id": "XL_holster",
-    "type": "ARMOR",
-    "name": "XL holster",
-    "description": "A belt holster consisting of a loop and strap intended for use with larger firearms.  Slightly more cumbersome than a standard holster due to the straps that hold it flat against your leg, Activate to holster/draw a gun.",
-    "weight": 320,
-    "volume": 1,
-    "price": 9000,
-    "rigid": false,
-    "material": "leather",
-    "symbol": "[",
-    "color": "light_gray",
-    "covers": ["LEG_EITHER"],
-    "coverage": 10,
-    "encumbrance": 2,
-    "material_thickness": 1,
-    "use_action": {
-      "type": "holster",
-      "min_volume": 5,
-      "max_volume": 8,
-      "skills": ["pistol", "smg", "shotgun", "rifle"]
-    },
-    "flags": ["WAIST", "OVERSIZE"]
   }
 ]

@@ -1,0 +1,211 @@
+[
+  {
+    "id": "gloves_xlsurvivor",
+    "type": "ARMOR",
+    "copy-from": "gloves_survivor",
+    "name": "pair of XL survivor gloves",
+    "name_plural": "pairs of XL survivor gloves",
+    "description": "A massive pair of customized, kevlar armored leather gloves, modified to be easy to wear while providing maximum protection under extreme conditions.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "xlsurvivor_suit",
+    "type": "ARMOR",
+    "copy-from": "survivor_suit",
+    "name": "XL survivor suit",
+    "description": "A massive home-built combination armor made from a bulletproof vest and a reinforced jumpsuit made out of leather.  Protects from the elements as well as from harm.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "OVERSIZE", "VARSIZE", "WATERPROOF", "POCKETS", "HOOD", "RAINPROOF", "STURDY" ]
+  },
+  {
+    "id": "subsuit_xl",
+    "type": "ARMOR",
+    "name": "subject suit",
+    "description": "A thin, short-sleeved and short-legged one-piece suit.  Judging by the odd tailoring and adjustment points...  maybe you don't want to know who wore it.  Provides nominal storage and is not very encumbering.",
+    "//": "there is no regular subsuit so there is nothing to copy from",
+    "weight": 810,
+    "volume": 20,
+    "price": 11000,
+    "to_hit": -3,
+    "material": [ "cotton", "plastic" ],
+    "symbol": "[",
+    "color": "yellow",
+    "covers": [ "LEGS", "ARMS", "TORSO" ],
+    "coverage": 95,
+    "encumbrance": 7,
+    "storage": 4,
+    "warmth": 15,
+    "material_thickness": 2,
+    "flags": [ "VARSIZE", "POCKETS", "OVERSIZE" ]
+  },
+  {
+    "id": "leg_warmers_xl",
+    "type": "ARMOR",
+    "copy-from": "leg_warmers",
+    "name": "pair of XL leg warmers",
+    "name_plural": "pairs of XL leg warmers",
+    "description": "Large, soft, snug cloth sleeves to keep your exotic anatomy warm.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "VARSIZE", "SKINTIGHT", "OVERSIZE" ]
+  },
+  {
+    "id": "leg_warmers_xlf",
+    "type": "ARMOR",
+    "copy-from": "leg_warmers_f",
+    "name": "pair of fetlock furs",
+    "name_plural": "pairs of fetlock furs",
+    "description": "Snug fur sleeves to keep your fetlocks warm.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "relative": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "jumpsuit_xl",
+    "type": "ARMOR",
+    "copy-from": "jumpsuit",
+    "name": "XL jumpsuit",
+    "description": "A thin, short-sleeved jumpsuit updated for the trans-human who needs full-body clothing.  Provides some storage and adjustable to minimize encumbrance.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "POCKETS", "OVERSIZE" ]
+  },
+  {
+    "id": "hood_xlsurvivor",
+    "type": "ARMOR",
+    "copy-from": "hood_survivor",
+    "name": "XL survivor hood",
+    "description": "A massive customized, heavily armored leather and kevlar hood, designed to provide comfort and protection from harm.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "OUTER" ]
+  },
+  {
+    "id": "helmet_xlsurvivor",
+    "type": "ARMOR",
+    "copy-from": "helmet_survivor",
+    "name": "XL survivor helmet",
+    "description": "A massive customized, heavily armored kevlar helmet, modified with leather reinforcements to provide maximum comfort and protection from harm.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "relative": { "flags": [ "OVERSIZE" ] }
+  },
+  {
+    "id": "mask_h20survivorxl",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_h20survivor",
+    "symbol": "[",
+    "color": "dark_gray",
+    "name": "XL survivor divemask",
+    "description": "A custom-built, armored rebreather mask that covers the face and eyes.  It provides excellent protection from harm as well providing breathing gas while underwater.  Use it to turn it on.",
+    "use_action": {
+      "type": "transform",
+      "msg": "You activate your %s.",
+      "target": "mask_h20survivorxl_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The %s's filter is used up."
+    },
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "VARSIZE", "STURDY", "WATER_FRIENDLY", "SWIM_GOGGLES", "OVERSIZE" ]
+  },
+  {
+    "id": "mask_h20survivorxl_on",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_h20survivor_on",
+    "symbol": "[",
+    "color": "dark_gray",
+    "name": "XL survivor divemask (on)",
+    "name_plural": "XL survivor divemasks (on)",
+    "description": "A custom-built, armored rebreather mask that covers the face and eyes regardless of your state of mutation.  It provides excellent protection from harm as well providing breathing gas while underwater.  It is turned on, and continually consuming its filter.  Use it to turn it off.",
+    "revert_to": "mask_h20survivorxl",
+    "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "Your %s deactivates.", "target": "mask_h20survivorxl" },
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "VARSIZE", "STURDY", "WATER_FRIENDLY", "REBREATHER", "SWIM_GOGGLES", "OVERSIZE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "mask_gas_xl",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_gas",
+    "name": "XL gas mask",
+    "description": "A rather roomy mask with filters attached, designed to accommodate exotic anatomy.  Provides excellent protection from smoke, teargas, and other contaminants.  It must be prepared before use.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "OVERSIZE" ]
+  },
+  {
+    "id": "mask_fsurvivorxl",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_fsurvivor",
+    "name": "XL survivor firemask",
+    "description": "A custom-built, Nomex-insulated gas mask that covers the face and eyes regardless of your state of mutation.  It provides excellent protection from heat, smoke, teargas, and shrapnel.   It must be prepared before use.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "VARSIZE", "STURDY", "OVERSIZE", "SUN_GLASSES" ]
+  },
+  {
+    "id": "mask_survivorxl",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_fsurvivor",
+    "name": "XL survivor mask",
+    "description": "A custom-built, reinforced gas mask that covers the face and eyes regardless of your state of mutation.  Provides excellent protection from smoke, teargas, and shrapnel.  It must be prepared before use.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "VARSIZE", "STURDY", "OVERSIZE", "SUN_GLASSES" ]
+  },
+  {
+    "id": "mask_wsurvivorxl",
+    "type": "TOOL_ARMOR",
+    "copy-from": "mask_wsurvivor",
+    "name": "XL winter survivor mask",
+    "description": "A custom-built, fur-trimmed gas mask that covers the face and eyes regardless of your state of mutation.  Quite warm, it still provides excellent protection from smoke, teargas, and shrapnel.  It must be prepared before use.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "VARSIZE", "STURDY", "OVERSIZE", "SUN_GLASSES" ]
+  },
+  {
+    "id": "rebreather_xl",
+    "type": "TOOL_ARMOR",
+    "copy-from": "rebreather",
+    "symbol": "[",
+    "color": "dark_gray",
+    "name": "XL rebreather mask",
+    "description": "A mask worn over your mouth which, when loaded with the proper filters, recycles your exhaled breath for rebreathing while underwater.  This model has been expanded substantially and can accommodate exotic anatomy.  Use it to turn it on.",
+    "use_action": {
+      "type": "transform",
+      "msg": "You activate your %s.",
+      "target": "rebreather_xl_on",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The %s's filter is used up."
+    },
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "WATER_FRIENDLY", "OVERSIZE" ]
+  },
+  {
+    "id": "rebreather_xl_on",
+    "type": "TOOL_ARMOR",
+    "copy-from": "rebreather_on",
+    "symbol": "[",
+    "color": "dark_gray",
+    "name": "XL rebreather mask (on)",
+    "name_plural": "XL rebreather masks (on)",
+    "description": "A mask worn over your mouth which, when loaded with the proper filters, recycles your exhaled breath for rebreathing while underwater.  This model has been expanded substantially and can accommodate exotic anatomy.  It is turned on, and continually consuming its filter.  Use it to turn it off.",
+    "flags": [ "WATER_FRIENDLY", "REBREATHER", "OVERSIZE", "TRADER_AVOID" ],
+    "revert_to": "rebreather_xl",
+    "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "Your %s deactivates.", "target": "rebreather_xl" },
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "WATER_FRIENDLY", "REBREATHER", "OVERSIZE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "XL_holster",
+    "type": "ARMOR",
+    "name": "XL holster",
+    "description": "A belt holster consisting of a loop and strap intended for use with larger firearms.  More cumbersome than a standard holster due to the straps that hold it flat against your leg, Activate to holster/draw a gun.",
+    "use_action": { "type": "holster", "min_volume": 5, "max_volume": 8, "skills": [ "pistol", "smg", "shotgun", "rifle" ] },
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 }
+  },
+  {
+    "id": "boots_xlsurvivor",
+    "type": "ARMOR",
+    "copy-from": "boots_survivor",
+    "name": "pair of XL survivor boots",
+    "name_plural": "pairs of XL survivor boots",
+    "description": "A massive pair of customized leather boots, armored with kevlar and modified to provide maximum protection from harm and the elements, even when knee-deep in the dead.",
+    "proportional": { "volume": 2, "weight": 2, "encumbrance": 1.5 },
+    "flags": [ "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY" ]
+  }
+]
+
